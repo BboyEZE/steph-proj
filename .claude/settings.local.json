@@ -3,7 +3,10 @@
     "allow": [
       "Bash(npm create:*)",
       "Bash(npm install:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(git rm:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nRemove requirements.txt to fix Netlify build\n\nThe requirements.txt file contained project requirements documentation\nrather than Python dependencies, causing Netlify''s auto-pip-install to fail.\nThis is a pure JavaScript/React project with no Python dependencies.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
