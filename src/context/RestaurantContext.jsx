@@ -23,7 +23,7 @@ export const RestaurantProvider = ({ children }) => {
   };
 
   /**
-   * Get a single restaurant by ID
+   * Get a single restauraznt by ID
    * @param {string} id - Restaurant ID
    * @returns {Object|undefined} Restaurant object or undefined
    */
